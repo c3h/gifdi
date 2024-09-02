@@ -1,0 +1,18 @@
+{
+  "private": true,
+  "name": "gifdi",
+  "displayName": "Gifdi",
+  "description": "Convert video to gif",
+  "version": "0.1.0",
+  "homepage": "https://github.com/c3h/gifdi",
+  "license": "UNLICENSED",
+  "author": {
+    "name": "Daniel A. Gimigliano",
+    "email": "daniel.alli@neji.addy.io",
+    "url": "https://www.linkedin.com/in/daniel-gimigliano/"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": []
+}

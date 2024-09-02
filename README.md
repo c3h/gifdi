@@ -1,0 +1,2 @@
+- **apps**: all artfacts compound the solution
+- **packages**: all shared types, components or functions used in more than one artfact
