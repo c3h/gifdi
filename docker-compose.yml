@@ -1,0 +1,11 @@
+name: gifdi
+networks:
+  gifdi:
+    name: gifdi
+services:
+  gifdi-postgres:
+    extends:
+      file: apps/api/docker-compose.yml
+      service: gifdi-postgres
+volumes:
+  gifdi-postgres:

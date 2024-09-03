@@ -17,7 +17,9 @@
     "dev": "nest start --watch",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
     "test": "jest",
-    "compile": "tsc --noEmit"
+    "compile": "tsc --noEmit",
+    "compose": "docker-compose down --remove-orphans && docker-compose up --build --force-recreate",
+    "compose:d": "npm run compose -- -d"
   },
   "dependencies": {
     "@nestjs/common": "^10.0.0",
