@@ -12,3 +12,8 @@ In backend, we can separate tests in 2 types:
 - **unit tests**: using the `*.spec.ts` postfixes and testing each method apart, mocking any dependency of them.
 
 - **integration tests**: using the `*.test.ts` postfixes and testing all the layers over application, mocking any external dependency like databases. This is necessary to improve the speed of tests and maintain better control over all alternative ways for each use case.
+
+In frontend, we can separate tests in 2 types:
+
+- **unit tests**: using the `*.spec.tsx` postfixes and testing component apart, mocking any dependency of them.
+- **integration tests**: using the `*.test.tsx` postfixes plus some automation tool like (Cypress)[https://www.cypress.io/] or [Playwright](https://playwright.dev/) to open application in browser, mocking any external dependency. This is necessary to improve the speed of tests and maintain better control over all alternative ways for each use case.
