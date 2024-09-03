@@ -17,17 +17,23 @@
     "lint": "pnpm --parallel -r run lint",
     "build": "pnpm --parallel -r run build",
     "compose": "docker-compose down --remove-orphans && docker-compose up --build --force-recreate",
-    "compose:d": "npm run compose -- -d"
+    "compose:d": "npm run compose -- -d",
+    "compile": "tsc"
   },
   "keywords": [],
   "commitlint": {
-    "extends": ["@commitlint/config-conventional"]
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
   },
   "devDependencies": {
     "@commitlint/cli": "^19.4.1",
     "@commitlint/config-conventional": "^19.4.1",
+    "@types/node": "20.12.7",
     "commitlint": "^19.4.1",
     "cz-conventional-changelog": "^3.3.0",
-    "lefthook": "^1.7.15"
+    "gts": "^5.3.1",
+    "lefthook": "^1.7.15",
+    "typescript": "^5.5.4"
   }
 }
