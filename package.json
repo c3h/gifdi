@@ -18,7 +18,9 @@
     "build": "pnpm --parallel -r run build",
     "compose": "docker-compose down --remove-orphans && docker-compose up --build --force-recreate",
     "compose:d": "npm run compose -- -d",
-    "compile": "tsc"
+    "compile": "tsc",
+    "test": "pnpm --parallel -r run test",
+    "test:ci": "pnpm --parallel -r run test:ci"
   },
   "keywords": [],
   "commitlint": {
