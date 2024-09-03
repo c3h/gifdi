@@ -1,0 +1,23 @@
+{
+  "private": true,
+  "name": "@gifdi/domain",
+  "displayName": "Gifdi - Domain layer",
+  "description": "Convert video to gif",
+  "version": "0.1.0",
+  "license": "UNLICENSED",
+  "author": {
+    "name": "Daniel A. Gimigliano",
+    "email": "daniel.alli@neji.addy.io",
+    "url": "https://www.linkedin.com/in/daniel-gimigliano/"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "compile": "tsc --noEmit"
+  },
+  "keywords": [],
+  "devDependencies": {
+    "typescript": "^5.5.4"
+  }
+}
