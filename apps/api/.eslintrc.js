@@ -6,10 +6,7 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: ['@typescript-eslint/eslint-plugin'],
-  extends: [
-    'plugin:@typescript-eslint/recommended',
-    'plugin:prettier/recommended',
-  ],
+  extends: ['plugin:@typescript-eslint/recommended', 'plugin:prettier/recommended', './node_modules/gts/'],
   root: true,
   env: {
     node: true,
@@ -17,9 +14,22 @@ module.exports = {
   },
   ignorePatterns: ['.eslintrc.js'],
   rules: {
+    // @typescript-eslint
     '@typescript-eslint/interface-name-prefix': 'off',
-    '@typescript-eslint/explicit-function-return-type': 'off',
+    '@typescript-eslint/explicit-function-return-type': 'error',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/no-namespace': 'off',
+    '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
+    '@typescript-eslint/consistent-type-imports': ['error', { fixStyle: 'inline-type-imports' }],
+    // prettier
+    'prettier/prettier': ['error', {}],
+    // eslint
+    'max-len': ['error', { code: 120, ignoreUrls: true }],
+  },
+  settings: {
+    node: {
+      allowModules: ['@nestjs/testing', 'supertest'],
+    },
   },
 };
