@@ -6,3 +6,9 @@
 - **dev:web:client**: to start only dedicated chrome looking for web (NextJS)
 - **dev:server**: to start `dev` in both projects (api and web) without dedicated chrome
 - **dev**: to start `dev` in both projects with dedicated chrome
+
+In backend, we can separate tests in 2 types:
+
+- **unit tests**: using the `*.spec.ts` postfixes and testing each method apart, mocking any dependency of them.
+
+- **integration tests**: using the `*.test.ts` postfixes and testing all the layers over application, mocking any external dependency like databases. This is necessary to improve the speed of tests and maintain better control over all alternative ways for each use case.
