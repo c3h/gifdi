@@ -44,5 +44,8 @@
   // xml
   "xml.format.enabled": false,
   // css
-  "css.lint.unknownAtRules": "ignore"
+  "css.lint.unknownAtRules": "ignore",
+  "cursor.general.enableShadowWorkspace": true,
+  "window.density.editorTabHeight": "default",
+  "workbench.activityBar.orientation": "vertical"
 }
